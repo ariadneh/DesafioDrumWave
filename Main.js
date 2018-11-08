@@ -5,8 +5,12 @@ var incomingTable = null; // variable to store the data received
 
 /* This function is called once the window has loaded */
 initModule = function () {
-
+	let principal = document.createElement('div');
+	principal.setAttribute('class', 'd-flex');
+	principal.innerHTML = mainTemplate;
+	document.getElementById('main').appendChild(principal);
 };
+
 
 //======================= COMMUNICATION ============================//
 

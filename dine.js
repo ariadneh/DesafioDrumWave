@@ -42,4 +42,4 @@ console.log('TEXT');
 
 console.log(numberOfWords('um dois tres quatro cinco seis'));
 console.log(numberOfChar('um dois tres quatro cinco seis'));
-console.log();
+
