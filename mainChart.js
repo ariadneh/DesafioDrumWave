@@ -21,28 +21,28 @@ function mainChart(chartLocation, chartType, labels, chartLabel, data, chartTitl
   }
 
 // GRÁFICO PUBLISHER
-mainChart('publisher', 'pie', ['min', 'max', 'media'], 'indice da velocidade', [minNumber(heroisTable[12]), maxNumber(heroisTable[12]), media(heroisTable[12])], 'velocidade');
+mainChart('publisher', 'pie', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
 // GRÁFICO CREATORS
-mainChart('creators', 'pie', ['min', 'max', 'media'], 'indice da velocidade', [minNumber(heroisTable[12]), maxNumber(heroisTable[12]), media(heroisTable[12])], 'velocidade');
+mainChart('creators', 'pie', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
 // GRÁFICO GENDER
-mainChart('gender', 'pie', ['min', 'max', 'media'], 'indice da velocidade', [minNumber(heroisTable[12]), maxNumber(heroisTable[12]), media(heroisTable[12])], 'velocidade');
+mainChart('gender', 'pie', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
 // GRÁFICO CHARACTER TYPE
-mainChart('characterType', 'pie', ['min', 'max', 'media'], 'indice da velocidade', [minNumber(heroisTable[12]), maxNumber(heroisTable[12]), media(heroisTable[12])], 'velocidade');
+mainChart('characterType', 'pie', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
 // GRÁFICO APPEARANCES
-mainChart('appearances', 'bar', ['min', 'max', 'media'], 'indice da velocidade', [minNumber(heroisTable[12]), maxNumber(heroisTable[12]), media(heroisTable[12])], 'velocidade');
+mainChart('appearances', 'bar', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
 // GRÁFICO INTELLIGENCE
-mainChart('intelligence', 'bar', ['min', 'max', 'media'], 'indice da velocidade', [minNumber(heroisTable[12]), maxNumber(heroisTable[12]), media(heroisTable[12])], 'velocidade');
+mainChart('intelligence', 'bar', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
 // GRÁFICO STRENGTH
-mainChart('strength', 'bar', ['min', 'max', 'media'], 'indice da velocidade', [minNumber(heroisTable[12]), maxNumber(heroisTable[12]), media(heroisTable[12])], 'velocidade');
+mainChart('strength', 'bar', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
 // GRÁFICO SPEED
-mainChart('speed', 'bar', ['min', 'max', 'media'], 'indice da velocidade', [minNumber(heroisTable[12]), maxNumber(heroisTable[12]), media(heroisTable[12])], 'velocidade');
+mainChart('speed', 'bar', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
 // GRÁFICO DURABILITY
-mainChart('durability', 'bar', ['min', 'max', 'media'], 'indice da velocidade', [minNumber(heroisTable[12]), maxNumber(heroisTable[12]), media(heroisTable[12])], 'velocidade');
+mainChart('durability', 'bar', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
 // GRÁFICO POWER
-mainChart('power', 'bar', ['min', 'max', 'media'], 'indice da velocidade', [minNumber(heroisTable[12]), maxNumber(heroisTable[12]), media(heroisTable[12])], 'velocidade');
+mainChart('power', 'bar', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
 // GRÁFICO COMBAT
-mainChart('combat', 'bar', ['min', 'max', 'media'], 'indice da velocidade', [minNumber(heroisTable[12]), maxNumber(heroisTable[12]), media(heroisTable[12])], 'velocidade');
+mainChart('combat', 'bar', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
 // GRÁFICO GOOD OR BAD
-mainChart('goodOrBad', 'bar', ['min', 'max', 'media'], 'indice da velocidade', [minNumber(heroisTable[12]), maxNumber(heroisTable[12]), media(heroisTable[12])], 'velocidade');
+mainChart('goodOrBad', 'bar', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
 // GRÁFICO DESCRIPTION
-mainChart('description', 'horizontalBar', ['min', 'max', 'media'], 'indice da velocidade', [minNumber(heroisTable[12]), maxNumber(heroisTable[12]), media(heroisTable[12])], 'velocidade');
+mainChart('description', 'horizontalBar', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
