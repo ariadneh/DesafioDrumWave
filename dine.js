@@ -1,10 +1,9 @@
-var nome = "Super Name";
+const getData = (input) => {
+  let indexPosition = nomeColunas.findIndex((user, index) => user === input);
+  return heroisTable.filter((user, index) => index === indexPosition);
+}
+console.log(getData('Super Name'));
 
-const indexPosition = nomeColunas.findIndex((user, index, array) => user === nome);
-console.log(index)
-
-const indexValues = heroisTable.filter((user, index, array) => index === indexPosition);
-console.log(indexValues)
 
 const media = ( array ) => array.reduce((acc, cur) => acc + cur, 0 ) / array.length;
 
@@ -37,7 +36,7 @@ const numberOfChar = (string) => {
   return string.length;
 }
 
-const
+
 
 console.log('TEXT');
 
