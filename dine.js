@@ -43,3 +43,25 @@ console.log('TEXT');
 console.log(numberOfWords('um dois tres quatro cinco seis'));
 console.log(numberOfChar('um dois tres quatro cinco seis'));
 
+
+// function mainChart(chartLocation, chartType, labels, chartLabel, data, chartTitle) {
+//   var ctx = document.getElementById(chartLocation).getContext('2d');
+//   var chart = new Chart(ctx, {
+//     type: chartType,
+//     data: {
+//         labels: labels,
+//         datasets: [{
+//             label: chartLabel,
+//             backgroundColor: 'rgb(255, 99, 132)',
+//             borderColor: 'rgb(255, 99, 132)',
+//             data: data,
+//         }]
+//     },
+//     options: {
+//       title: {
+//           display: true,
+//           text: chartTitle
+//       }
+//   }
+// });
+// }

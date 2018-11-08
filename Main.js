@@ -5,12 +5,8 @@ var incomingTable = null; // variable to store the data received
 
 /* This function is called once the window has loaded */
 initModule = function () {
-	let principal = document.createElement('div');
-	principal.setAttribute('class', 'd-flex');
-	principal.innerHTML = mainTemplate;
-	document.getElementById('main').appendChild(principal);
-};
 
+};
 
 //======================= COMMUNICATION ============================//
 
@@ -75,7 +71,7 @@ window.addEventListener( "message", onMessageReceived, false);
 window.addEventListener("load", onWindowLoad );
 
 function onWindowLoad () {
-	initModule();
+	
 }
 
 //==================== FUNCOES ESPECIAS DE TALENT FEST ========================//
@@ -99,3 +95,27 @@ function enviarDados(){
 	onMessageReceived(nullEvent);
 	onMessageReceived(validEvent);
 };
+
+
+// function mainChart(chartLocation, chartType, labels, chartLabel, data, chartTitle) {
+//   var ctx = document.getElementById(chartLocation).getContext('2d');
+//   var chart = new Chart(ctx, {
+//     type: chartType,
+//     data: {
+//         labels: labels,
+//         datasets: [{
+//             label: chartLabel,
+//             backgroundColor: 'rgb(255, 99, 132)',
+//             borderColor: 'rgb(255, 99, 132)',
+//             data: data,
+//         }]
+//     },
+//     options: {
+//       title: {
+//           display: true,
+//           text: chartTitle
+//       }
+//   }
+// });
+// }
+// mainChart('speed', 'bar', ['min', 'max', 'media'], 'indice da velocidade', [minNumber(heroisTable[12]), maxNumber(heroisTable[12]), media(heroisTable[12])], 'velocidade')

@@ -4,16 +4,32 @@
 		<meta charset=utf-8>
 		<meta name="author" content="author name">
 		<meta name="version" content="v01">
-		<title>Module Name</title>
+		<title>Heroes</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 	</head>
 	<body id="index" class="home" >
-
-		<div id="main"></div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+		<div id="main">
+			<canvas id="publisher" width="400" height="400"></canvas>
+			<canvas id="creators" width="400" height="400"></canvas>
+			<canvas id="gender" width="400" height="400"></canvas>
+			<canvas id="characterType" width="400" height="400"></canvas>
+			<canvas id="appearances" width="400" height="400"></canvas>
+			<canvas id="intelligence" width="400" height="400"></canvas>
+			<canvas id="strength" width="400" height="400"></canvas>
+			<canvas id="speed" width="400" height="400"></canvas>
+			<canvas id="durability" width="400" height="400"></canvas>
+			<canvas id="power" width="400" height="400"></canvas>
+			<canvas id="combat" width="400" height="400"></canvas>
+			<canvas id="goodOrBad" width="400" height="400"></canvas>
+			<canvas id="description" width="400" height="400"></canvas>
+		</div>
 
 		<!-- Main configuration file(s) -->
 		<script type="text/javascript" src="./tabelaHerois.js"></script>
 		<script type="text/javascript" src="./Main.js"></script>
 		<script type="text/javascript" src="./dine.js"></script>
-		<script type="text/javascript" src="./mainTemplate.js"></script>
+		<script type="text/javascript" src="./mainChart.js"></script>
 	</body>
 </html>
