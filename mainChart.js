@@ -21,28 +21,28 @@ function mainChart(chartLocation, chartType, labels, chartLabel, data, chartTitl
   }
 
 // GRÁFICO PUBLISHER
-mainChart('publisher', 'pie', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
+mainChart('publisher', 'pie', getFrequency(getData("Publisher")[0])[1], 'Editoras', getFrequency(getData("Publisher")[0])[0], 'Editoras');
 // GRÁFICO CREATORS
-mainChart('creators', 'pie', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
+mainChart('creators', 'pie', getFrequency(getData("Creators")[0])[1], 'Criadores', getFrequency(getData("Creators")[0])[0], 'Criadores');
 // GRÁFICO GENDER
-mainChart('gender', 'pie', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
+mainChart('gender', 'pie', getFrequency(getData("Gender")[0])[1], 'Sexo do personagem', getFrequency(getData("Gender")[0])[0], 'Sexo do personagem');
 // GRÁFICO CHARACTER TYPE
-mainChart('characterType', 'pie', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
+mainChart('characterType', 'pie', getFrequency(getData("Character Type")[0])[1], 'Tipo de personagem', getFrequency(getData("Character Type")[0])[0], 'Tipo de personagem');
 // GRÁFICO APPEARANCES
-mainChart('appearances', 'bar', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
+mainChart('appearances', 'bar', ['Mínimo', 'Máximo', 'Média'], 'Aparições', numberData(heroisTable[7]), 'Aparições');
 // GRÁFICO INTELLIGENCE
-mainChart('intelligence', 'bar', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
+mainChart('intelligence', 'bar', ['Mínimo', 'Máximo', 'Média'], 'Taxa de inteligência', numberData(heroisTable[8]), 'Taxa de inteligência');
 // GRÁFICO STRENGTH
-mainChart('strength', 'bar', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
+mainChart('strength', 'bar', ['Mínimo', 'Máximo', 'Média'], 'Taxa de força', numberData(heroisTable[9]), 'Taxa de força');
 // GRÁFICO SPEED
-mainChart('speed', 'bar', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
+mainChart('speed', 'bar', ['Mínimo', 'Máximo', 'Média'], 'Taxa da velocidade', numberData(heroisTable[10]), 'Taxa da velocidade');
 // GRÁFICO DURABILITY
-mainChart('durability', 'bar', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
+mainChart('durability', 'bar', ['Mínimo', 'Máximo', 'Média'], 'Taxa de resistência', numberData(heroisTable[11]), 'Taxa de resistência');
 // GRÁFICO POWER
-mainChart('power', 'bar', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
+mainChart('power', 'bar', ['Mínimo', 'Máximo', 'Média'], 'Taxa de poder', numberData(heroisTable[12]), 'Taxa de poder');
 // GRÁFICO COMBAT
-mainChart('combat', 'bar', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
+mainChart('combat', 'bar', ['Mínimo', 'Máximo', 'Média'], 'Taxa de combate', numberData(heroisTable[13]), 'Taxa de combate');
 // GRÁFICO GOOD OR BAD
-mainChart('goodOrBad', 'bar', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
+mainChart('goodOrBad', 'bar', getFrequency(getData("Good or Bad")[0])[1], 'Índole', getFrequency(getData("Good or Bad")[0]), 'Índole');
 // GRÁFICO DESCRIPTION
-mainChart('description', 'horizontalBar', ['min', 'max', 'media'], 'indice da velocidade', numberData(heroisTable[12]), 'velocidade');
+mainChart('description', 'horizontalBar', ['Mínimo', 'Máximo', 'Média'], 'Texto', textData(heroisTable[15]), 'Texto');
