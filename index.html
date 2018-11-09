@@ -46,71 +46,100 @@
 			</section>
 			<section>
 				<h2 class="subtitle">VERSUS</h2>
-			</section>
-			
-			<section>
-				<h2 class="subtitle">TEAM BATTLE</h2>
+
 				<div class="row justify-content-center cards">
 
 					<div id="card1" class="battleCard col-5">
 						<h1>?</h1>
-						<button><h3>ESCOLHA UM HERÓI</h3></button>
+            <div id="card1" class="battleCard">
+                <img src="" />
+                <p>Super Name: <span id="name1"></span></p>
+                <p>Real Name: <span id="realName1"></span></p>
+                <p>Description: <span id="description1"></span></p>
+                <p>Character Type: <span id="characterType1"></span></p>
+                <p>Intelligence: <span id="intelligence1"></span></p>
+                <p>Strength: <span id="strength1"></span></p>
+                <p>Speed: <span id="speed1"></span></p>
+                <p>Durability: <span id="durability1"></span></p>
+                <p>Power: <span id="power1"></span></p>
+                <p>Combat: <span id="combat1"></span></p>
+              </div>
+              <!-- Button trigger modal -->
+              <button id="choice-hero1 " type="button" class="btn btn-white" data-toggle="modal" data-target="#Modal1">
+                ESCOLHA SEU HERÓI
+              </button>
+     
 					</div>
 					
 					<div class="vs"><h1>VS</h1></div>
 					
 					<div id="card2" class="battleCard col-5">
 						<h1>?</h1>
-						<button><h3>ESCOLHA SEU ADVERSÁRIO</h3></button>
-					</div>
+            <div id="card2" class="battleCard">
+                <img src="" />
+                <p>Super Name: <span id="name2"></span></p>
+                <p>Real Name: <span id="realName2"></span></p>
+                <p>Description: <span id="description2"></span></p>
+                <p>Character Type: <span id="characterType2"></span></p>
+                <p>Intelligence: <span id="intelligence2"></span></p>
+                <p>Strength: <span id="strength2"></span></p>
+                <p>Speed: <span id="speed2"></span></p>
+                <p>Durability: <span id="durability2"></span></p>
+                <p>Power: <span id="power2"></span></p>
+                <p>Combat: <span id="combat2"></span></p>
+              </div>
+     
+              <!-- Button trigger modal -->
+              <button  id="choice-hero2 " type="button" class="btn btn-white" data-toggle="modal" data-target="#Modal2">
+                ESCOLHA SEU ADVERSÁRIO
+              </button>
+          </div>
 				</div>
 
 			</section>	
     </div>
-    <section>
-        <h2 class="subtitle">VERSUS</h2>
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <!-- Button trigger modal -->
-             <button id="choice-hero1 " type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-                  Hero 1
-                </button>
- 
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button id="choice-hero2 " type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-                      Hero 2
-                    </button>
-          </div>
-        </div>
-    </section>
+    
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Choose your character</h5>
+              <h5 class="modal-title" id="Modal1">Modal title</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
  
             <div class="row">
-              <div class="col images-container justify-content-center"></div>
+              <div class="col images-container1"></div>
             </div>
- 
- 
+
  
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" id="close" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+ 
+ 
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="Modal2">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+ 
+            <div class="row">
+              <div class="col images-container2"></div>
+            </div>
+
+            <div class="modal-footer">
+              <button  type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
