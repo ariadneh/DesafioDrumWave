@@ -6,7 +6,7 @@ function heroCharacteristics(indexHero) {
   for (i = 0; i < dataDescription.length - 1; i++) {
     heroDescription.push(getData(dataDescription[i])[0][indexHero]);
   }
-
+    heroDescription[dataDescription.length - 1] = images[indexHero];
   return heroDescription;
 }
 
