@@ -28,7 +28,6 @@ const numberData = (array) => {
 function getFrequency(array) {
   const uniqueValues = [...new Set(array)];
   const numberUniqueValues = uniqueValues.length; 
-  console.log("Valores distintos:" + uniqueValues);
   let numberAppearance = [];
 
   uniqueValues.forEach((item, index) => {
