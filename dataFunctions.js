@@ -42,61 +42,64 @@ function countInArray(array, what) {
   return array.filter(item => item == what).length;
 }
 
-function categoryData(array) {
-  return [getFrequency()]
-}
+// console.log(getData(nomeColunas[15]));
+// console.log(separateWordsInDescription(getData(nomeColunas[15])));
+// console.log(countWordsOfDescription(separateWordsInDescription(getData(nomeColunas[15]))));
+
 
 // ---------------------------------------------------------------------------
 // FUNÇÕES PARA COLUNAS DE TEXTO
-
 // Separa as palavras do texto Description e retorna uma array somente com palavras
 function separateWordsInDescription(param) {
   let words = [];
   for (i = 0; i < param[0].length; i++) {
     words.push(param[0][i].split(/[ \t\n\r\f\v\,\()\s\n\.\?\#\:]+/));
-}
-let wordsAll = words.reduce((list, sub) => list.concat(sub), [])
-let wordsAllClean = [];
-for (i = 0; i < wordsAll.length; i++) {
-  if (wordsAll[i] !== "") {
-    wordsAllClean.push(wordsAll[i]);
   }
-}
-return wordsAllClean;
-}
-
-// Conta o número de palavras do retorno da função separateWordsInDescription
-function countWordsOfDescription(param) {
-let sumArray = 0;
-for (i = 0; i < param.length; i++) {
-   sumArray= sumArray + 1;
-}
-return sumArray;
-}
-
-// Separa e conta o número de caracteres do array na posição Description
-function countCharacters(param) {
-  let words = [];
-  for (i = 0; i < param[0].length; i++) {
-    words.push(param[0][i].split(''));
+  let wordsAll = words.reduce((list, sub) => list.concat(sub), []);
+  let wordsAllClean = [];
+  for (i = 0; i < wordsAll.length; i++) {
+    if (wordsAll[i] !== "") {
+      wordsAllClean.push(wordsAll[i].toUpperCase());
+    }
   }
+  return wordsAllClean;
+ }
+ 
+//  // Conta o número de palavras do retorno da função separateWordsInDescription
+ function countWordsOfDescription(param) {
+  let sumArray = 0;
+  for (i = 0; i < param.length; i++) {
+     sumArray= sumArray + 1;
+  }
+  return sumArray;
+  }
+ 
+//  // Separa e conta o número de caracteres do array na posição Description
+ function countCharacters(param) {
+    let words = [];
+    for (i = 0; i < param[0].length; i++) {
+      words.push(param[0][i].split(''));
+    }
+ 
+    let sumCharacters = 0;
+  for (i = 0; i < words.length; i++) {
+    sumCharacters += words[i].length;
+  }
+ return sumCharacters;
+ }
+  
 
-  let sumCharacters = 0;
-for (i = 0; i < words.length; i++) {
-  sumCharacters += words[i].length;
-}
-return sumCharacters;
-}
-
-// função que mostra a palavra que mais aparece no retorno da função separateWordsInDescription
+// função que mostra a palavra que mais aparece no retorno da função separateWordsInDescription 
 function wordAppearsMoreTimes(param) {
-let counts = {};
-let compare = -1;
-let mostFrequent;
 
-  for (var i = 0, len = param.length; i < len; i++) {
-    var word = param[i];
+  let counts = {};
+  let compare = -1;
+  let mostFrequent;
+ 
+  for (i = 0; i < param.length; i++) {
+    let word = param[i];
 
+    // let wordsSplit = separateWordsInDescription(param);
     if (counts[word] === undefined) {
       counts[word] = 1;
     } else {
@@ -104,14 +107,24 @@ let mostFrequent;
     }
     if (counts[word] > compare) {
       compare = counts[word];
-      mostFrequent = wordsSplit[i];
+      mostFrequent = param[i];
     }
+  }
+ 
+  let count = 0;
+  for (i = 0; i < param.length; i++ ){
+    if (param[i] === mostFrequent) {
+      count++;
+    }
+  }
+  
+  return [count, mostFrequent];
 }
-return mostFrequent;
-}
+
+console.log(wordAppearsMoreTimes(separateWordsInDescription(getData(nomeColunas[15]))));
 
 const textData = (array) => {
-  return [countWordsOfDescription(separateWordsInDescription(array)), countCharacters(getData(nomeColunas[15])), 10]
+  return [countWordsOfDescription(separateWordsInDescription(array)), countCharacters(getData(nomeColunas[15])), wordAppearsMoreTimes(separateWordsInDescription(getData(nomeColunas[15])))[0]]
 }
 
-// wordAppearsMoreTimes(separateWordsInDescription(array))
+console.log(textData(heroisTable[15]));
