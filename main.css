@@ -18,6 +18,8 @@ body {
 
 .title {
   font-size: 70px;
+  color: #101015;
+  margin-bottom: 0;
 }
 
 .subtitle {
@@ -29,6 +31,7 @@ body {
 .label {
 	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
+	font-size: 14px;
 	color: #0c7cec;
 }
 
@@ -45,6 +48,12 @@ body {
 	flex-direction: row;
 	align-items: flex-start;
 	flex-wrap: wrap;
+}
+
+.hero {
+	/*width: 100px;*/
+	height: 200px;
+	background-color: #ccc;
 }
 
 .frame {

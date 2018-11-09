@@ -7,7 +7,7 @@ function mainChart(chartLocation, chartType, labels, chartLabels, data, display)
       datasets: [{
         label: chartLabels, 
         // backgroundColor: ['rgb(255, 99, 132)', 'rgb(173,255,47)', 'rgb(34,139,34)'],
-        backgroundColor: ['#ec1d24', '#0c7cec', '#ffe600'],
+        backgroundColor: ['#ec1d24', '#0c7cec', '#ffe600', '#3d8d41', '#ff6600', '#ff6666', '#660066'],
         borderColor: '#101015',
           data: data,
       }]
