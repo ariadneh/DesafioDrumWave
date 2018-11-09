@@ -1,14 +1,14 @@
 window.onload = loadImages();
  
- function heroCharacteristics(indexHero) {
-  let dataDescription = ["Super Name", "Real Name", "Character Type", "Intelligence", "Strength", "Speed", "Durability", "Power", "Combat"];
+function heroCharacteristics(indexHero) {
+  let dataDescription = ["Super Name", "Real Name", "Description", "Character Type", "Intelligence", "Strength", "Speed", "Durability", "Power", "Combat", "url"];
   let heroDescription = [];
-  for (i = 0; i < dataDescription.length; i++) {
+  for (i = 0; i < dataDescription.length - 1; i++) {
     heroDescription.push(getData(dataDescription[i])[0][indexHero]);
   }
- return heroDescription;
+  heroDescription[dataDescription.length - 1] = images[indexHero];
+  return heroDescription;
  }
-
 
  function loadImages() {
   let imagesContainer = document.getElementsByClassName("images-container");
@@ -29,12 +29,8 @@ window.onload = loadImages();
   for (let i = 0; i < heroImage.length; i++) {
     heroImage[i].addEventListener('click', showHeroes, false);
   }
-}
-
-}
-
-function secondPlayer() {
-
+  document.getElementById("card1").addEventListener('click', () =>  document.getElementById("images-container").style.display = "flex");
+  document.getElementById("card2").addEventListener('click', () =>  document.getElementById("images-container").style.display = "flex");
 }
 
 $(".btn-fight").click(function() {
@@ -87,5 +83,5 @@ function showHeroes(event) {
   document.getElementById("durability1").textContent = index[6];
   document.getElementById("power1").textContent = index[7];
   document.getElementById("combat1").textContent = index[8];
-  // document.getElementById("image1").setAttribute('src', index[9]);
+  document.getElementById("image1").setAttribute('src', index[9]);
 }
