@@ -50,10 +50,53 @@ body {
 	flex-wrap: wrap;
 }
 
-.hero {
-	/*width: 100px;*/
-	height: 200px;
-	background-color: #ccc;
+.cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.battleCard {
+	border: 10px solid #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+	height: 500px;
+	color: #fff;
+}
+
+.battleCard:first-child {
+	background-color: #ec1d24;
+}
+
+.battleCard:last-child {
+	background-color: #0c7cec;
+}
+
+.battleCard h1 {
+	font-size: 200px;
+}
+
+.battleCard button {
+	padding: 10px 15px 0 15px;
+	text-decoration: none;
+	border: none;
+	border-radius: 5px;
+}
+
+.vs {
+	background-color: #fff;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.vs h1 {
+	font-size: 70px;
 }
 
 .frame {

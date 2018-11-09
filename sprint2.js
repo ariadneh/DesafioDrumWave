@@ -6,11 +6,11 @@ function heroCharacteristics(indexHero) {
   for (i = 0; i < dataDescription.length; i++) {
     heroDescription.push(getData(dataDescription[i])[0][indexHero]);
   }
+
   return heroDescription;
 }
 
-
- function loadImages() {
+function loadImages() {
   let imagesContainer = document.getElementsByClassName("images-container");
   images.forEach((imageURL, index) => {
     let div = $('<div>');
@@ -73,6 +73,4 @@ function grade(index){
 function showHeroes(event) {
   let index = event.target.dataset.id;
   console.log(heroCharacteristics(index))
-
 }
-
