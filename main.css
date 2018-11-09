@@ -35,9 +35,17 @@ body {
 	background-color: #d3d3d3;
 }
 
-.character {
-	width: 20px;
-	height: 100px;
+.images-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.image {
+	width: 10%;
+	height: 10% auto;
 	border: 1px solid #101015; 
+	overflow: hidden;
 }
 
