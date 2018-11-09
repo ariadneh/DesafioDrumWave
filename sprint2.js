@@ -1,7 +1,8 @@
 window.onload = loadImages();
  
 function heroCharacteristics(indexHero) {
-  let dataDescription = ["Super Name", "Real Name", "Description", "Character Type", "Intelligence", "Strength", "Speed", "Durability", "Power", "Combat"];
+  let dataDescription = ["Super Name", "Real Name", "Character Type", "Intelligence", "Strength", "Speed", "Durability", "Power", "Combat"];
+
   let heroDescription = [];
   for (i = 0; i < dataDescription.length; i++) {
     heroDescription.push(getData(dataDescription[i])[0][indexHero]);
@@ -29,6 +30,8 @@ function loadImages() {
   for (let i = 0; i < heroImage.length; i++) {
     heroImage[i].addEventListener('click', showHeroes, false);
   }
+  document.getElementById("card1").addEventListener('click', () =>  document.getElementById("images-container").style.display = "flex");
+  document.getElementById("card2").addEventListener('click', () =>  document.getElementById("images-container").style.display = "flex");
 }
 
 $(".btn-fight").click(function() {
@@ -71,6 +74,15 @@ function grade(index){
 }
 
 function showHeroes(event) {
-  let index = event.target.dataset.id;
-  console.log(heroCharacteristics(index))
+  let index = heroCharacteristics(event.target.dataset.id);
+  document.getElementById("name1").textContent = index[0];
+  document.getElementById("realName1").textContent = index[1];
+  document.getElementById("characterType1").textContent = index[2];
+  document.getElementById("intelligence1").textContent = index[3];
+  document.getElementById("strength1").textContent = index[4];
+  document.getElementById("speed1").textContent = index[5];
+  document.getElementById("durability1").textContent = index[6];
+  document.getElementById("power1").textContent = index[7];
+  document.getElementById("combat1").textContent = index[8];
+  // document.getElementById("image1").setAttribute('src', index[9]);
 }
