@@ -85,13 +85,14 @@ body {
     font-size: 70px;
 }
 .frame {
-    width: 7%;
-    height: 100px;
+    width: 10%;
+    height: 130px;
     border: 5px solid #fff;
     background-color: #101015;
-    overflow: hidden;
+		overflow: hidden;
+		float: left;
 }
-.image {
+.image1, .image2 {
     width: auto;
     height: 100%;
 }
