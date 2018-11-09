@@ -29,8 +29,12 @@ window.onload = loadImages();
   for (let i = 0; i < heroImage.length; i++) {
     heroImage[i].addEventListener('click', showHeroes, false);
   }
-  document.getElementById("card1").addEventListener('click', () =>  document.getElementById("images-container").style.display = "flex");
-  document.getElementById("card2").addEventListener('click', () =>  document.getElementById("images-container").style.display = "flex");
+}
+
+}
+
+function secondPlayer() {
+
 }
 
 $(".btn-fight").click(function() {
