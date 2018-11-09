@@ -1,7 +1,7 @@
 window.onload = loadImages();
  
 function heroCharacteristics(indexHero) {
-  let dataDescription = ["Super Name", "Real Name", "Description", "Character Type", "Intelligence", "Strength", "Speed", "Durability", "Power", "Combat", "url"];
+  let dataDescription = ["Super Name", "Real Name", "Character Type", "Intelligence", "Strength", "Speed", "Durability", "Power", "Combat", "url"];
   let heroDescription = [];
   for (i = 0; i < dataDescription.length - 1; i++) {
     heroDescription.push(getData(dataDescription[i])[0][indexHero]);
